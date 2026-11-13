@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Control de Innovación · Radar de convocatorias Educamás">
+  <title>Control de Innovación | Educamás</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script defer type="module" src="/assets/app.js"></script>
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar">
+      <div class="logo"><div class="logo-name">educa<span>+</span></div><div class="logo-sub">INNOVACIÓN & GRANTS</div></div>
+      <div class="side-heading">CONTROL DE INNOVACIÓN</div>
+      <nav class="navigation" aria-label="Secciones">
+        <button type="button" class="nav-link selected" data-nav="dashboard"><span>▦</span> Vista general</button>
+        <button type="button" class="nav-link" data-nav="opportunities"><span>◫</span> Convocatorias</button>
+        <button type="button" class="nav-link" data-nav="analysis"><span>▥</span> Análisis y resultados</button>
+        <button type="button" class="nav-link" data-nav="new"><span>✚</span> Nuevo grant</button>
+      </nav>
+      <div class="side-bottom"><b>EDUCAMÁS</b><p>Transformamos oportunidades en impacto.</p><span>Plataforma sin usuarios ni contraseñas</span></div>
+    </aside>
+    <div class="main-column">
+      <header class="topbar"><button class="menu-toggle" aria-label="Menú" id="menuToggle">☰</button><div class="top-label"><span class="active-dot"></span> Control de Innovación <span class="top-divider">/</span> <strong id="pageName">Vista general</strong></div><div class="top-right"><span id="lastUpdated">Conectando…</span><button class="btn btn-outline btn-small" id="refreshBtn">↻ Actualizar</button></div></header>
+      <main class="content" id="mainContent"><div class="loading">Conectando con Google Sheets…</div></main>
+      <footer class="app-footer">© Educamás · Radar de financiación · Datos internos: verificar soporte antes de reportar resultados</footer>
+    </div>
+  </div>
+  <div class="modal-backdrop hidden" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-panel"><div class="modal-header"><div><div class="eyebrow">CONTROL DE INNOVACIÓN</div><h2 id="modalTitle">Convocatoria</h2></div><button type="button" class="icon-button" id="closeModal" aria-label="Cerrar">×</button></div><div class="modal-content" id="modalContent"></div></div></div>
+  <div class="toast hidden" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

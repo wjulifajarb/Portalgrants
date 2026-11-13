@@ -1,0 +1,26 @@
+COPIAR EN GOOGLE APPS SCRIPT
+======================================
+google-apps-script/Code.gs
+
+COPIAR EN VISUAL STUDIO CODE (respetar nombres y carpetas)
+======================================
+index.html
+assets/app.js
+assets/styles.css
+assets/favicon.svg
+api/grants.js
+server.mjs
+package.json
+vercel.json
+.env.example  (duplicar como .env.local y configurar sin subir a GitHub)
+.gitignore
+README.md
+
+1) Primero instala Apps Script.
+2) Después edita .env.local.
+3) Ejecuta npm run dev.
+4) Sube el repositorio completo a GitHub y conéctalo a Vercel.
+
+NO HAY USUARIOS NI LOGIN. IMPORTANTE: SIN LOGIN, TODO EL QUE VISITE
+EL PORTAL PODRÁ VER/EDITAR LA INFORMACIÓN. NO USAR DATOS SENSIBLES
+EN UNA DEPLOY PÚBLICA SIN CONTROL DE ACCESO.
